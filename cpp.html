@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Learning Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #eef2f7;
+        }
+        .website-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .main-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #222;
+            padding: 15px 20px;
+            border-radius: 8px;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+        }
+        .nav-list li {
+            margin: 0 15px;
+        }
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .nav-list a:hover {
+            color: #ff8c00;
+        }
+        .btn {
+            background: #ff8c00;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn:hover {
+            background: #e67e00;
+        }
+        #welcome {
+            text-align: center;
+            padding: 70px 30px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .content-section {
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .example-code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        .example-code pre {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="website-container">
+        <nav class="main-navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.php">Courses</a></li>
+                <li><a href="#basics">C++ Basics</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#arrays">Arrays</a></li>
+                <li><a href="#pointers">Pointers</a></li>
+                <li><a href="#oop">OOP Concepts</a></li>
+            </ul>
+        </nav>
+        
+        <section id="welcome">
+            <h2>Welcome to C++ Learning Hub</h2>
+            <p>Learn the fundamentals of C++ programming through structured tutorials and examples.</p>
+            <a href="#examples" class="btn">Start Learning Now</a>
+        </section>
+
+        <section id="basics" class="content-section">
+            <h2>C++ Basics</h2>
+            <p>C++ is a high-performance programming language that is widely used for developing applications, games, and systems software.</p>
+            <ul>
+                <li><strong>Syntax:</strong> The syntax of C++ is similar to C but has many improvements, such as classes and functions.</li>
+                <li><strong>Variables:</strong> Variables are used to store data in C++. You can declare a variable with its type followed by its name. Example: <code>int x = 5;</code></li>
+                <li><strong>Data Types:</strong> C++ provides several data types such as integers (<code>int</code>), floating point numbers (<code>float</code>), characters (<code>char</code>), booleans (<code>bool</code>), and more.</li>
+                <li><strong>Comments:</strong> C++ allows single-line comments using <code>//</code> and multi-line comments using <code>/* comment */</code>.</li>
+                <li><strong>Control Structures:</strong> C++ supports control structures like <code>if</code>, <code>else</code>, and <code>switch</code> for conditional statements, and <code>for</code>, <code>while</code>, and <code>do-while</code> loops for iteration.</li>
+                <li><strong>Functions:</strong> Functions in C++ are blocks of code that can be called multiple times. They help to organize and modularize your code.</li>
+            </ul>
+        </section>
+
+        <section id="examples" class="content-section">
+            <h2>Example Code</h2>
+            <p>Here’s a basic C++ program to print “Hello, World!” to the console:</p>
+            <div class="example-code">
+                <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+    return 0;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="functions" class="content-section">
+            <h2>Functions in C++</h2>
+            <p>Functions in C++ allow you to organize code into reusable blocks. Functions can return a value and accept parameters.</p>
+            <div class="example-code">
+                <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int result = add(3, 4);
+    cout &lt;&lt; "The sum is: " &lt;&lt; result &lt;&lt; endl;
+    return 0;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="arrays" class="content-section">
+            <h2>Arrays in C++</h2>
+            <p>An array is a collection of elements of the same type. The elements are stored in contiguous memory locations, and you can access them using an index.</p>
+            <div class="example-code">
+                <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+
+    for(int i = 0; i &lt; 5; i++) {
+        cout &lt;&lt; "Element at index " &lt;&lt; i &lt;&lt; ": " &lt;&lt; arr[i] &lt;&lt; endl;
+    }
+    return 0;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="pointers" class="content-section">
+            <h2>C++ Pointers</h2>
+            <p>A pointer is a variable that holds the memory address of another variable. Pointers are crucial in C++ for dynamic memory allocation and managing memory efficiently.</p>
+            <div class="example-code">
+                <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+    int x = 5;
+    int *ptr = &x;
+
+    cout &lt;&lt; "Value of x: " &lt;&lt; x &lt;&lt; endl;
+    cout &lt;&lt; "Memory address of x: " &lt;&lt; ptr &lt;&lt; endl;
+    cout &lt;&lt; "Value at pointer: " &lt;&lt; *ptr &lt;&lt; endl;
+
+    return 0;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="oop" class="content-section">
+            <h2>Object-Oriented Programming (OOP) Concepts</h2>
+            <p>OOP in C++ allows you to create classes that define properties (data members) and behaviors (functions). It supports key principles like encapsulation, inheritance, and polymorphism.</p>
+            <div class="example-code">
+                <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+class Animal {
+public:
+    void speak() {
+        cout &lt;&lt; "The animal makes a sound!" &lt;&lt; endl;
+    }
+};
+
+class Dog : public Animal {
+public:
+    void speak() {
+        cout &lt;&lt; "The dog barks!" &lt;&lt; endl;
+    }
+};
+
+int main() {
+    Animal animal;
+    animal.speak();
+
+    Dog dog;
+    dog.speak();
+
+    return 0;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="resources" class="content-section">
+            <h2>C++ Learning Resources</h2>
+            <ul>
+                <li><a href="https://www.geeksforgeeks.org/c-plus-plus/" target="_blank">LearnCpp</a></li>
+                <li><a href="https://cplusplus.com/" target="_blank">C++ Reference</a></li>
+                <li><a href="https://www.cprogramming.com/" target="_blank">C Programming</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-c-plus-plus" target="_blank">Codecademy C++ Course</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

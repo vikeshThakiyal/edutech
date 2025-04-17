@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #eef2f7;
+        }
+        .website-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .main-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #222;
+            padding: 15px 20px;
+            border-radius: 8px;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+        }
+        .nav-list li {
+            margin: 0 15px;
+        }
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .nav-list a:hover {
+            color: #ff8c00;
+        }
+        .btn {
+            background: #ff8c00;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn:hover {
+            background: #e67e00;
+        }
+        #welcome {
+            text-align: center;
+            padding: 70px 30px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .content-section {
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .example-code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        .example-code pre {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="website-container">
+        <nav class="main-navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.php">Courses</a></li>
+                <li><a href="#basics">HTML Basics</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#media">HTML Media</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
+        </nav>
+        
+        <section id="welcome">
+            <h2>Welcome to HTML Learning Hub</h2>
+            <p>Learn the foundation of web development with structured tutorials and examples.</p>
+            <a href="#examples" class="btn">Start Learning Now</a>
+        </section>
+        
+        <section id="basics" class="content-section">
+            <h2>HTML Basics</h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating webpages.</p>
+            <ul>
+                <li><strong>Elements:</strong> The basic building blocks of HTML.</li>
+                <li><strong>Tags:</strong> Define the structure of a webpage.</li>
+                <li><strong>Attributes:</strong> Provide additional information about elements.</li>
+                <li><strong>HTML Document Structure:</strong> Every HTML document begins with a DOCTYPE declaration and consists of an opening <html> tag, <head> section, and a <body> section.</li>
+            </ul>
+        </section>
+        
+        <section id="examples" class="content-section">
+            <h2>Example Code</h2>
+            <div class="example-code">
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First HTML Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a simple HTML page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </div>
+        </section>
+        
+        <section id="forms" class="content-section">
+            <h2>HTML Forms</h2>
+            <p>Forms allow users to input data on a website.</p>
+            <div class="example-code">
+                <pre>
+&lt;form action="submit.php" method="POST"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+    &lt;br&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+                </pre>
+            </div>
+        </section>
+        
+        <section id="tables" class="content-section">
+            <h2>HTML Tables</h2>
+            <p>Tables help organize data in rows and columns.</p>
+            <div class="example-code">
+                <pre>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                </pre>
+            </div>
+        </section>
+        
+        <section id="media" class="content-section">
+            <h2>HTML Media Elements</h2>
+            <p>HTML allows you to embed different types of media on your webpage, such as images, audio, and video.</p>
+            <div class="example-code">
+                <pre>
+&lt;img src="image.jpg" alt="Example Image"&gt;
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    Your browser does not support the video element.
+&lt;/video&gt;
+                </pre>
+            </div>
+        </section>
+
+        <section id="links" class="content-section">
+            <h2>HTML Links</h2>
+            <p>Links are essential in navigating the web. Here's how to create them:</p>
+            <div class="example-code">
+                <pre>
+&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+&lt;a href="mailto:someone@example.com"&gt;Send an Email&lt;/a&gt;
+&lt;a href="#basics"&gt;Go to HTML Basics&lt;/a&gt;
+                </pre>
+            </div>
+        </section>
+        
+        <section id="resources" class="content-section">
+            <h2>HTML Learning Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.freecodecamp.org/news/html-html5-tutorial/" target="_blank">FreeCodeCamp HTML Tutorial</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank">Codecademy HTML Course</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

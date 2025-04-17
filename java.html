@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Learning Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #eef2f7;
+        }
+        .website-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .main-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #222;
+            padding: 15px 20px;
+            border-radius: 8px;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+        }
+        .nav-list li {
+            margin: 0 15px;
+        }
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .nav-list a:hover {
+            color: #ff8c00;
+        }
+        .btn {
+            background: #ff8c00;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn:hover {
+            background: #e67e00;
+        }
+        #welcome {
+            text-align: center;
+            padding: 70px 30px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .content-section {
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .example-code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        .example-code pre {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="website-container">
+        <nav class="main-navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.php">Courses</a></li>
+                <li><a href="#basics">Java Basics</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#arrays">Arrays</a></li>
+                <li><a href="#oop">OOP Concepts</a></li>
+                <li><a href="#exceptions">Exceptions</a></li>
+            </ul>
+        </nav>
+        
+        <section id="welcome">
+            <h2>Welcome to Java Learning Hub</h2>
+            <p>Learn the fundamentals of Java programming through structured tutorials and examples.</p>
+            <a href="#examples" class="btn">Start Learning Now</a>
+        </section>
+
+        <section id="basics" class="content-section">
+            <h2>Java Basics</h2>
+            <p>Java is a high-level, class-based, object-oriented programming language that is widely used for building applications.</p>
+            <ul>
+                <li><strong>Syntax:</strong> Java syntax is similar to C++, with some differences. It follows a class-based structure.</li>
+                <li><strong>Variables:</strong> Variables in Java are used to store data. Example: <code>int x = 5;</code></li>
+                <li><strong>Data Types:</strong> Java provides various data types, such as <code>int</code>, <code>double</code>, <code>char</code>, <code>boolean</code>, etc.</li>
+                <li><strong>Control Structures:</strong> Java supports conditional statements like <code>if</code>, <code>else</code>, and loops like <code>for</code>, <code>while</code>, and <code>do-while</code>.</li>
+                <li><strong>Functions:</strong> Java allows functions (or methods) to perform tasks. Functions are always part of a class.</li>
+                <li><strong>Comments:</strong> Java supports both single-line comments (<code>//</code>) and multi-line comments (<code>/* comment */</code>).</li>
+            </ul>
+        </section>
+
+        <section id="examples" class="content-section">
+            <h2>Example Code</h2>
+            <p>Here’s a basic Java program to print “Hello, World!” to the console:</p>
+            <div class="example-code">
+                <pre>
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="functions" class="content-section">
+            <h2>Functions in Java</h2>
+            <p>Functions (methods) in Java are used to define reusable blocks of code that can perform specific tasks.</p>
+            <div class="example-code">
+                <pre>
+public class Main {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int result = add(3, 4);
+        System.out.println("The sum is: " + result);
+    }
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="arrays" class="content-section">
+            <h2>Arrays in Java</h2>
+            <p>Arrays in Java are used to store multiple values in a single variable. They are objects and can store elements of the same data type.</p>
+            <div class="example-code">
+                <pre>
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        
+        for(int i = 0; i &lt; arr.length; i++) {
+            System.out.println("Element at index " + i + ": " + arr[i]);
+        }
+    }
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="oop" class="content-section">
+            <h2>Object-Oriented Programming (OOP) Concepts in Java</h2>
+            <p>Java is an object-oriented programming language, meaning it revolves around objects and classes.</p>
+            <div class="example-code">
+                <pre>
+class Animal {
+    public void speak() {
+        System.out.println("The animal makes a sound!");
+    }
+}
+
+class Dog extends Animal {
+    public void speak() {
+        System.out.println("The dog barks!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        animal.speak();
+        
+        Dog dog = new Dog();
+        dog.speak();
+    }
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="exceptions" class="content-section">
+            <h2>Handling Exceptions in Java</h2>
+            <p>Exceptions in Java are used to handle runtime errors, preventing the application from crashing.</p>
+            <div class="example-code">
+                <pre>
+public class Main {
+    public static void main(String[] args) {
+        try {
+            int result = 10 / 0; // This will throw an exception
+        } catch (ArithmeticException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="resources" class="content-section">
+            <h2>Java Learning Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/java/" target="_blank">W3Schools Java Tutorial</a></li>
+                <li><a href="https://docs.oracle.com/javase/tutorial/" target="_blank">Oracle Java Tutorials</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-java" target="_blank">Codecademy Java Course</a></li>
+                <li><a href="https://www.geeksforgeeks.org/java/" target="_blank">GeeksforGeeks Java</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learning Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #eef2f7;
+        }
+
+        .website-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .main-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #222;
+            padding: 15px 20px;
+            border-radius: 8px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav-list a:hover {
+            color: #ff8c00;
+        }
+
+        .btn {
+            background: #ff8c00;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #e67e00;
+        }
+
+        #welcome {
+            text-align: center;
+            padding: 70px 30px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section {
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .example-code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+
+        .example-code pre {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="website-container">
+        <nav class="main-navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.php">Courses</a></li>
+                <li><a href="#basics">CSS Basics</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#selectors">CSS Selectors</a></li>
+                <li><a href="#box-model">CSS Box Model</a></li>
+                <li><a href="#layout">CSS Layout</a></li>
+                <li><a href="#media-queries">Media Queries</a></li>
+            </ul>
+        </nav>
+
+        <section id="welcome">
+            <h2>Welcome to CSS Learning Hub</h2>
+            <p>Master the art of styling websites with structured CSS tutorials and examples.</p>
+            <a href="#examples" class="btn">Start Learning Now</a>
+        </section>
+
+        <section id="basics" class="content-section">
+            <h2>CSS Basics</h2>
+            <p>CSS (Cascading Style Sheets) is the language used to style HTML elements.</p>
+            <ul>
+                <li><strong>Selectors:</strong> Used to target HTML elements for styling.</li>
+                <li><strong>Properties:</strong> Define the styles that can be applied to elements.</li>
+                <li><strong>Values:</strong> The specific setting for a property (e.g., color, font-size).</li>
+                <li><strong>CSS Syntax:</strong> A CSS rule consists of a selector and declaration block.</li>
+            </ul>
+        </section>
+
+        <section id="examples" class="content-section">
+            <h2>Example Code</h2>
+            <div class="example-code">
+                <pre>
+/* Example of a simple CSS style */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="selectors" class="content-section">
+            <h2>CSS Selectors</h2>
+            <p>Selectors are patterns used to select the elements you want to style.</p>
+            <div class="example-code">
+                <pre>
+/* Selects all paragraph elements */
+p {
+    font-size: 16px;
+}
+
+/* Selects element with id="main" */
+#main {
+    background-color: #ff8c00;
+}
+
+/* Selects all elements with class="highlight" */
+.highlight {
+    background-color: yellow;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="box-model" class="content-section">
+            <h2>CSS Box Model</h2>
+            <p>The CSS box model defines the rectangular boxes generated for elements, consisting of content, padding,
+                border, and margin.</p>
+            <div class="example-code">
+                <pre>
+/* Basic Box Model Example */
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 30px;
+    background-color: #e2e2e2;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="layout" class="content-section">
+            <h2>CSS Layout</h2>
+            <p>Learn how to control the layout of your webpage using CSS.</p>
+            <div class="example-code">
+                <pre>
+/* Flexbox Layout Example */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 30%;
+    padding: 10px;
+    background-color: #ff8c00;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="media-queries" class="content-section">
+            <h2>CSS Media Queries</h2>
+            <p>Media queries allow you to apply different styles based on the screen size or other characteristics of
+                the device.</p>
+            <div class="example-code">
+                <pre>
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+                </pre>
+            </div>
+        </section>
+
+        <section id="resources" class="content-section">
+            <h2>CSS Learning Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.freecodecamp.org/news/css-css3-tutorial/" target="_blank">FreeCodeCamp CSS
+                        Tutorial</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-css" target="_blank">Codecademy CSS Course</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>

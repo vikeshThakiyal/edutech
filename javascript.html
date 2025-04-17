@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Learning Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #eef2f7;
+        }
+        .website-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .main-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #222;
+            padding: 15px 20px;
+            border-radius: 8px;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+        }
+        .nav-list li {
+            margin: 0 15px;
+        }
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .nav-list a:hover {
+            color: #ff8c00;
+        }
+        .btn {
+            background: #ff8c00;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn:hover {
+            background: #e67e00;
+        }
+        #welcome {
+            text-align: center;
+            padding: 70px 30px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .content-section {
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .example-code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        .example-code pre {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="website-container">
+        <nav class="main-navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.php">Courses</a></li>
+                <li><a href="#basics">JavaScript Basics</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#variables">JavaScript Variables</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#objects">Objects</a></li>
+                <li><a href="#arrays">Arrays</a></li>
+                <li><a href="#events">Events</a></li>
+            </ul>
+        </nav>
+        
+        <section id="welcome">
+            <h2>Welcome to JavaScript Learning Hub</h2>
+            <p>Learn the basics and advanced features of JavaScript with structured tutorials and examples.</p>
+            <a href="#examples" class="btn">Start Learning Now</a>
+        </section>
+        
+        <section id="basics" class="content-section">
+            <h2>JavaScript Basics</h2>
+            <p>JavaScript is a programming language used to make web pages interactive. It is a versatile and powerful tool for client-side scripting, but it can also be used for server-side development.</p>
+            <ul>
+                <li><strong>Syntax:</strong> The rules that define a valid JavaScript statement. JavaScript syntax is the set of rules that defines a correctly structured program.</li>
+                <li><strong>Variables:</strong> Variables store data that can be referenced and manipulated in a program. You can declare variables using <code>let</code>, <code>const</code>, or <code>var</code> (although <code>let</code> and <code>const</code> are preferred in modern JavaScript).</li>
+                <li><strong>Functions:</strong> Functions are blocks of reusable code. They take inputs, process them, and return an output. Functions can be named or anonymous (functions without names).</li>
+                <li><strong>Data Types:</strong> JavaScript has several data types including numbers, strings, booleans, arrays, and objects. Each type represents a kind of value that can be stored in a variable.</li>
+                <li><strong>Operators:</strong> JavaScript has a variety of operators like arithmetic operators (+, -, *, /), assignment operators (=, +=, -=), comparison operators (==, ===, !=, >, <), and logical operators (&&, ||, !).</li>
+                <li><strong>Conditional Statements:</strong> JavaScript allows you to make decisions in your code using <code>if</code>, <code>else</code>, and <code>else if</code>. These statements allow you to execute code blocks based on certain conditions.</li>
+                <li><strong>Loops:</strong> Loops let you repeat a block of code multiple times. JavaScript supports various loop types such as <code>for</code>, <code>while</code>, and <code>do...while</code>.</li>
+                <li><strong>Events:</strong> JavaScript can be used to handle events such as clicks, key presses, and mouse movements. You can attach event listeners to elements to trigger JavaScript code when an event occurs.</li>
+                <li><strong>Objects:</strong> Objects are collections of properties (key-value pairs). Objects allow you to store related data and functions in a single structure.</li>
+                <li><strong>Arrays:</strong> Arrays are special types of objects that allow you to store a list of items, whether they are numbers, strings, or even other objects.</li>
+                <li><strong>Scope:</strong> The scope of a variable defines where it is accessible within your code. Variables declared with <code>let</code> and <code>const</code> have block scope, while <code>var</code> has function scope.</li>
+                <li><strong>Hoisting:</strong> In JavaScript, variable declarations are hoisted to the top of their scope. However, variable assignments are not hoisted. This can lead to some unexpected behavior, especially with <code>var</code>.</li>
+                <li><strong>ES6 Features:</strong> Modern JavaScript (ES6 and beyond) introduces new features like arrow functions, template literals, destructuring, and classes to make JavaScript development more efficient and readable.</li>
+            </ul>
+        </section>
+        
+        <section id="examples" class="content-section">
+            <h2>Example Code</h2>
+            <div class="example-code">
+                <pre>
+// Example of a simple JavaScript code
+let message = "Hello, World!";
+console.log(message);
+                </pre>
+            </div>
+        </section>
+
+        <section id="variables" class="content-section">
+            <h2>JavaScript Variables</h2>
+            <p>Variables are used to store data values in JavaScript.</p>
+            <div class="example-code">
+                <pre>
+// Declaring variables
+let name = "John";
+const age = 25;
+var isStudent = true;
+
+// Display the variable values
+console.log(name);  // Output: John
+console.log(age);   // Output: 25
+                </pre>
+            </div>
+        </section>
+
+        <section id="functions" class="content-section">
+            <h2>JavaScript Functions</h2>
+            <p>Functions are reusable blocks of code in JavaScript.</p>
+            <div class="example-code">
+                <pre>
+// Example of a simple function
+function greet() {
+    console.log("Hello, Welcome to JavaScript!");
+}
+
+greet(); // Calling the function
+                </pre>
+            </div>
+        </section>
+
+        <section id="objects" class="content-section">
+            <h2>JavaScript Objects</h2>
+            <p>Objects are collections of properties and methods in JavaScript.</p>
+            <div class="example-code">
+                <pre>
+// Example of a JavaScript object
+let person = {
+    name: "John",
+    age: 25,
+    greet: function() {
+        console.log("Hello, " + this.name);
+    }
+};
+
+person.greet();  // Output: Hello, John
+                </pre>
+            </div>
+        </section>
+
+        <section id="arrays" class="content-section">
+            <h2>JavaScript Arrays</h2>
+            <p>Arrays are used to store multiple values in a single variable.</p>
+            <div class="example-code">
+                <pre>
+// Example of an array
+let fruits = ["Apple", "Banana", "Orange"];
+console.log(fruits[0]);  // Output: Apple
+console.log(fruits[1]);  // Output: Banana
+                </pre>
+            </div>
+        </section>
+
+        <section id="events" class="content-section">
+            <h2>JavaScript Events</h2>
+            <p>Events are actions that occur in the system, such as user interactions like clicks or key presses.</p>
+            <div class="example-code">
+                <pre>
+// Example of an event
+document.getElementById("btn").addEventListener("click", function() {
+    alert("Button clicked!");
+});
+                </pre>
+            </div>
+        </section>
+
+        <section id="resources" class="content-section">
+            <h2>JavaScript Learning Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.freecodecamp.org/news/javascript-tutorial/" target="_blank">FreeCodeCamp JavaScript Tutorial</a></li>
+                <li><a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Codecademy JavaScript Course</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

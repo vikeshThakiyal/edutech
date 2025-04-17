@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Figma Learning Hub</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eef2f7;
+}
+
+.website-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ff8c00;
+}
+
+.btn {
+    background: #ff8c00;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #e67e00;
+}
+
+#welcome {
+    text-align: center;
+    padding: 70px 30px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 50px 0;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.resource-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
+    padding: 20px;
+}
+
+.resource-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.demo-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.demo-links a {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.demo-links a:hover {
+    background: #218838;
+}
+
+.path-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.step {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    position: relative;
+}
+
+.step span {
+    background: #ff8c00;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .features, .resource-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .features, .resource-grid {
+        grid-template-columns: 1fr;
+    }
+    .path-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="website-container">
+        <nav class="main-navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="dashboard.php">Courses</a></li>
+                <li><a href="#learning-path">Learning Path</a></li>
+            </ul>
+        
+        </nav>
+        
+        <section id="welcome">
+            <h2>Welcome to Figma Learning Hub</h2>
+            <p>Master Figma with our curated tutorials, resources, and video guides.</p><br>
+            <a href="https://www.figma.com/" class="btn" target="_blank">Start Learning Now</a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fa-solid fa-bezier-curve"></i>
+                <h3>Vector Networks</h3>
+                <p>Create complex vector shapes with intuitive path editing tools.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-layer-group"></i>
+                <h3>Auto Layout</h3>
+                <p>Design responsive components that adapt to content changes.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-users"></i>
+                <h3>Real-Time Collaboration</h3>
+                <p>Work seamlessly with team members in real-time.</p>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Figma Learning Resources</h2><br>
+            <div class="resource-grid">
+                <a href="https://www.figma.com/resource-library/design-basics/" class="resource-card" target="_blank">
+                    <img src="images/fl1.png" alt="Design Basics">
+                    <h3>Design Basics</h3>
+                </a>
+                <a href="https://www.figma.com/community/file/1006624870389379433/figma-tutorial-for-beginners" class="resource-card" target="_blank">
+                    <img src="images/fl3.webp" alt="Tutorials">
+                    <h3>Official Tutorials</h3>
+                </a>
+                <a href="https://www.figma.com/community" class="resource-card" target="_blank">
+                    <img src="images/fl4.jpg" alt="Community Resources">
+                    <h3>Community Resources</h3>
+                </a>
+            </div>
+        </section><br>
+
+        <section id="videos">
+            <h2>Top Figma Tutorials on YouTube</h2><br>
+            <div class="resource-grid">
+                <a href="https://youtu.be/ezldKx-jPag?si=oew782bBmk7mpn7K" class="resource-card" target="_blank">
+                    <img src="images/fl5.jpg" alt="Beginner Tutorial">
+                    <h3>Figma Beginner Tutorial</h3>
+                </a>
+                <a href="https://youtu.be/v1UKB-0EUhQ?si=16N2ipao9kz9kRTX" class="resource-card" target="_blank">
+                    <img src="images/fl6.jpeg" alt="Prototyping">
+                    <h3>Figma Prototyping Guide</h3>
+                </a>
+                <a href="https://youtu.be/GFYc5ZT-vFI?si=7XodbiFSq13bJA3w   " class="resource-card" target="_blank">
+                    <img src="images/fl7.jpg" alt="Advanced Techniques">
+                    <h3>Advanced Figma Techniques</h3>
+                </a>
+            </div>
+        </section><br>
+
+        <section id="learning-path">
+            <h2>Structured Learning Path</h2><br>
+            <div class="path-steps">
+                <div class="step">
+                    <span>1</span>
+                    <h3>Master the Basics</h3>
+                    <p>Learn interface navigation and core tools.</p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <h3>Create Components</h3>
+                    <p>Build reusable design systems.</p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <h3>Prototype</h3>
+                    <p>Create interactive prototypes for user testing.</p>
+                </div>
+                <div class="step">
+                    <span>4</span>
+                    <h3>Collaborate</h3>
+                    <p>Work with developers and stakeholders.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
